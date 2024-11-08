@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="de" >
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <title>Login</title>
 </head>
 
 <body>
-<h1>Login</h1>
-
-<input type="text" class="login-input" placeholder="Username">
-<input type="password" class="login-input" placeholder="Password">
-<button>Login</button>
-
+    <div class="container">
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/Logo_IHK_Koeln.svg') }}" alt="IHK Logo" style="max-width: 100%; margin-bottom: 20px;">
+       </div>
+         <input type="text" class="login-input" placeholder="Benutzername">
+        <input type="password" class="login-input" placeholder="Passwort">
+        <div style="text-align: left;">
+            <input type="checkbox" id="show-password">
+            <label for="show-password">Passwort anzeigen</label>
+        </div>
+        <button onclick="loginButton()">Login</button>
+        <div style="margin-top: 10px;">
+            <a href="#" style="color: #007bff; text-decoration: none;">Passwort/Nutzername vergessen?</a><br>
+            <a href="#" style="color: #007bff; text-decoration: none;">Hilfe?</a>
+        </div>
+    </div>
 </body>
 
 </html>
 
+
+<script src="{{ url_for('static', filename='scripts/login.js') }}"></script>
