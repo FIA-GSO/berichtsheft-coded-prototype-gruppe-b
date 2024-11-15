@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IHK Prototype</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<body>
+ 
+<div class="container">
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/Logo_IHK_Koeln.svg') }}" alt="IHK Logo" style="max-width: 100%; margin-bottom: 20px;">
+    </div>
+ 
+    <!-- Search Bar and Dropdown -->
+<div class="search-container">
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+    </div>
+    <div class="dropdown">
+        <button>Menu Item</button>
+        <div class="dropdown-content">
+            <label><input type="checkbox"> First</label>
+            <label><input type="checkbox"> Second</label>
+            <label><input type="checkbox"> Third</label>
+        </div>
+    </div>
+</div>
+ 
+    <!-- Menu Item List -->
+    <div class="menu">
+        <div class="menu-item">
+            <div class="menu-item-text">Nachweis XY vom xx.xx.xxxx</div>
+            <button class="menu-item-button">→</button>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-text">Nachweis XY vom xx.xx.xxxx</div>
+            <button class="menu-item-button">→</button>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-text">Nachweis XY vom xx.xx.xxxx</div>
+            <button class="menu-item-button">→</button>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item-text">Nachweis XY vom xx.xx.xxxx</div>
+            <button class="menu-item-button">→</button>
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>
+
+ 
