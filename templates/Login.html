@@ -13,13 +13,15 @@
         <div class="logo-container">
             <img src="{{ url_for('static', filename='images/Logo_IHK_Koeln.svg') }}" alt="IHK Logo" style="max-width: 100%; margin-bottom: 20px;">
        </div>
-         <input type="text" class="login-input" placeholder="Benutzername">
-        <input type="password" class="login-input" placeholder="Passwort">
+       <form>
+        <input type="text" class="login-input" placeholder="Benutzername">
+        <input type="password" class="login-input" id="password-field" placeholder="Passwort">
         <div style="text-align: left;">
-            <input type="checkbox" id="show-password">
+            <input type="checkbox" id="show-password" onclick="togglePassword()">
             <label for="show-password">Passwort anzeigen</label>
         </div>
-        <button onclick="loginButton()">Login</button>
+        <button type="submit">Login</button>
+    </form>
         <div style="margin-top: 10px;">
             <a href="#" style="color: #007bff; text-decoration: none;">Passwort/Nutzername vergessen?</a><br>
             <a href="#" style="color: #007bff; text-decoration: none;">Hilfe?</a>
